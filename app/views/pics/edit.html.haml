@@ -4,4 +4,7 @@
       .panel-heading
         %h1 Post Fix
       .panel-body
+        .current_image
+          %strong.centeer Right Now
+          = image_tag @pic.image.url(:medium)
         = render 'form'
